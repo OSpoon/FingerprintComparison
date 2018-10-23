@@ -2,7 +2,7 @@
 
 ##### 一、初始化项目目录
 
-    如项目目录不存在all,diff,old目录时可执行init_dir.py文件
+    如项目目录不存在all,diff,old目录时可执行InitDir.py文件
 
 ##### 二、第一次执行获取初始文件指纹
 
