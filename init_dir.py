@@ -7,3 +7,4 @@ if __name__ == '__main__':
         os.makedirs('diff')
     if not os.path.exists(os.getcwd() + '/old'):
         os.makedirs('old')
+    input("执行完毕 ==> Prease <enter>")

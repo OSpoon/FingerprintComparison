@@ -44,3 +44,4 @@ def output():
 
 if __name__ == '__main__':
     output()
+    input("执行完毕 ==> Prease <enter>")

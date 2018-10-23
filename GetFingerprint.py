@@ -63,3 +63,4 @@ def get_fingerprint(path):
 
 if __name__ == '__main__':
     get_fingerprint(os.getcwd() + '/all/dist')
+    input("执行完毕 ==> Prease <enter>")
