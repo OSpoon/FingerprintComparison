@@ -2,23 +2,31 @@
 
 ##### 一、初始化项目目录
 
-    如项目目录不存在all,diff,old目录时可执行InitDir.py文件
+1. 如项目目录不存在all,diff,old目录时可执行InitDir.py文件
 
 ##### 二、第一次执行获取初始文件指纹
 
-    1、需将要进行对比的文件目录放置all/dist文件夹
+1. 需将要进行对比的文件目录放置all/dist文件夹
 
-    2、执行GetFingerprint.py文件,提取成功会在all/dist下生成manifest.config文件
+2. 执行GetFingerprint.py文件,提取成功会在all/dist下生成manifest.config文件
 
-    3、将生成的manifest.config文件复制到old目录
+3. 将生成的manifest.config文件复制到old目录
 
 ##### 三、第二次执行进行新旧文件对比
 
-    1、需将要进行对比的文件目录再次放置all/dist文件夹
+1. 需将要进行对比的文件目录再次放置all/dist文件夹
 
-    2、执行GetFingerprint.py文件,提取成功会在all/dist下生成manifest.config文件
+2. 执行GetFingerprint.py文件,提取成功会在all/dist下生成manifest.config文件
 
-    3、确保old目录下存在上次复制进去的manifest.config文件
+3. 确保old目录下存在上次复制进去的manifest.config文件
 
-    4、执行GetDiff.py文件,如检测到存在差异文件会输出到diff目录
+4.  执行GetDiff.py文件,如检测到存在差异文件会输出到diff目录
 
+
+##### [文件指纹验证](https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E6%8C%87%E7%BA%B9%E9%AA%8C%E8%AF%81/6027261 "文件指纹验证")
+
+  - 当你从网络上下载了软件后，想确保此软件没有被人修改过（如添加了木马/病毒/非官方插件），或在下载中被破坏，可以用文件指纹验证（MD5）技术进行确认。
+
+  - 通过某种算法，对具体的文件进行校验，得出了一个32位的十六进制数（校验和）。待校验文件的文件名和后缀名都可以更改，不影响校核。由于原来的信息只要有稍许改动，通过md5运算后，结果都会有很大的改变。所以，如果再次校验以后所得到的值（md5代码）和此软件发布站或官方网站公布的值不同，就可以认为，文件已被改动过。
+
+  注:内容来自百度百科
