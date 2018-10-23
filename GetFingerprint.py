@@ -33,6 +33,7 @@ def traverse(f):
         else:
             traverse(tmp_path)
 
+
 '''
 输出指纹文件
 '''
@@ -53,6 +54,9 @@ def output(file_path):
     print('文件MD5值统计完成')
 
 
+'''
+获取指纹
+'''
 def get_fingerprint(path):
     ishave = os.path.exists(path)
     if not ishave:
