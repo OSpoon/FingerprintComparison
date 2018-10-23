@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # encoding: utf-8
-'''
+
+"""
 @author: Spoon
 @contact: zxin088@gmail.com
 @file: GetFingerprint.py
 @time: 2018/10/23 18:02
 @desc:
-'''
+"""
 
 import hashlib
 import os
@@ -17,6 +18,8 @@ file_list = []
 '''
 获取输入路径文件的指纹
 '''
+
+
 def get_file_md5(filepath):
     if not os.path.isfile(filepath):
         return
@@ -34,6 +37,8 @@ def get_file_md5(filepath):
 '''
 遍历当前输入目录下ALL文件
 '''
+
+
 def traverse(f):
     fs = os.listdir(f)
     for f1 in fs:
@@ -47,6 +52,8 @@ def traverse(f):
 '''
 输出指纹文件
 '''
+
+
 def output(file_path):
     traverse(file_path)
     print('统计文件总数: ' + str(file_list.__len__()) + '   ' + str(file_list.__len__() * 2))
@@ -67,6 +74,8 @@ def output(file_path):
 '''
 获取指纹
 '''
+
+
 def get_fingerprint(path):
     ishave = os.path.exists(path)
     if not ishave:

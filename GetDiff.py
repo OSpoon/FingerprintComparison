@@ -1,23 +1,26 @@
 #!/usr/bin/env python
 # encoding: utf-8
-'''
+
+
+"""
 @author: Spoon
 @contact: zxin088@gmail.com
 @file: GetDiff.py
 @time: 2018/10/23 18:02
 @desc:
-'''
+"""
 
 import os
 import json
 import shutil
-
 
 '''
 统计差异文件
 1.旧指纹文件不存在的文件指纹进行记录
 2.旧指纹文件存在但指纹不一致的进行记录
 '''
+
+
 def get_diff_list():
     diff_list = []
     ishave_old = os.path.exists(os.getcwd() + '/old/manifest.config')
@@ -45,6 +48,8 @@ def get_diff_list():
 '''
 输出差异文件
 '''
+
+
 def output():
     diff_list = get_diff_list()
     if diff_list:
@@ -63,6 +68,8 @@ def output():
 '''
 获取差异文件
 '''
+
+
 def get_diff():
     output()
 
