@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+@author: Spoon
+@contact: zxin088@gmail.com
+@file: GetDiff.py
+@time: 2018/10/23 18:02
+@desc:
+'''
+
 import os
 import json
 import shutil
